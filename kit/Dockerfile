@@ -1,0 +1,2 @@
+FROM siemensindustrialedge/dataservicedevelopmentkit:1.5.0
+EXPOSE 4203

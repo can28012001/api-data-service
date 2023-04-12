@@ -12,9 +12,15 @@ const BackupRoute = require("./Backup");
 const DataRetentionRoute = require("./DataRetention");
 const CalculateJobCollectionsRoute = require("./CalculateJobCollections");
 const CalculateRoute = require("./Calculate");
+const SendEmailRoute = require("./SendEmail");
+// const UserRoute = require("./User");
+// const TypeKPIRoute = require("./TypeKPI");
 
 function route(app) {
   app.use("/", CalculateRoute);
+  app.use("/email", SendEmailRoute);
+  // app.use("/type-kpi", TypeKPIRoute);
+  // app.use("/users", UserRoute);
   app.use("/Assets", AssetsRoute);
   app.use("/Variables", VariablesRoute);
   app.use("/Aspects", AspectsRoute);
